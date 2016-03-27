@@ -1,5 +1,43 @@
 /* CSS Entry Point */
 $background-color: #DACCCA;
+$instructions: darken(white, 70%);
+
+h1, h3 span {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	color: $instructions;
+}
+
+h1 {
+	font-size: 4em;
+	color: white;
+	letter-spacing: 6px;
+	text-shadow:  2px 2px 5px darken($background-color, 40%);
+	}
+
+h3 span {
+	font-size: .9em;
+	color: darken($instructions, 5%);
+	letter-spacing: 1.5px;
+}
+
+p, .header span, , .question, .question-area {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	color: $instructions;
+	letter-spacing: 0.75px;
+}
+
+p {
+	font-size: 0.95em;
+	text-align: center;
+}
+
+.header span {
+	font-size: 1.15em;
+	font-weight: bolder;
+	letter-spacing: -0.1px;
+}
 
 img {
 	height: 100px;
@@ -9,7 +47,7 @@ img {
 }
 
 .question-area div {
-	width: 450px;
+	width: 500px;
 }
 
 .app {
@@ -27,29 +65,6 @@ img {
 	margin: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	span {
-		font-family: 'Oswald', sans-serif;
-		font-weight: lighter;
-		// text-decoration: underline;
-		letter-spacing: 1.5px;
-	}
-}
-
-h1 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 3.5em;
-	color: white;
-	letter-spacing: 6px;
-	text-shadow:  2px 2px 5px darken($background-color, 40%);
-	text-align: center;
-}
-
-p {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: .9em;
-	letter-spacing: 0.75px;
-	color: darken(white, 70%);
-	text-align: center;
 }
 
 .question-area {
