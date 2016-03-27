@@ -1,11 +1,44 @@
 /* CSS Entry Point */
+img {
+	height: 100px;
+	float: left;
+	padding: 20px;
+	margin-right: 20px;
+}
+
+.question-area div {
+	width: 450px;
+}
 
 .app {
-	background-color: lighten(blue, 45%);
+	background-color: lighten(blue, 40%);
+	border-radius: 5px;
+	display: inline-block;
 }
 
 .game-stage {
-	padding: 20px;
+	padding: 0 20px 20px 20px;
+}
+
+.header {
+	max-width: 90%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	span {
+		font-weight: bolder;
+		text-decoration: underline;
+	}
+}
+
+h1, p {
+	text-align: center;
+}
+
+.question-area {
+	padding: 25px 40px 25px 40px;
+	border: 0.5px solid gray;
+	border-radius: 4px;
 }
 
 

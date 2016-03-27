@@ -2,7 +2,7 @@
 
 import $ from 'jquery';
 
-var $gameStage = $('.game-stage');
+var $gameStage = $('.game-stage'); //target area to display quiz questions
 
 var questions = [
   {image: '../images/France.png', 	title: 'What country does this flag represent?', choices: ['Spain', 'France', 'UK', 'Germany'], correct: 'France'},
@@ -57,11 +57,17 @@ makeQuestions.forEach(function(question){
 	$gameStage.append(question);
 });
 
-$('button').on('click', () => {
-  var answer = $('.question:checked').val();
-  alert(answer);
-  alert("mint chocolate chip");
+var $buttons = $('button');		   //target submit button
+								   //why doesn't the var work if put at top of file?
+								   //how does js read the code (order)?
+$buttons.click(function(){
+	alert('u clicked a button with a function!!');
+	console.log('click event');
 });
+
+// $buttons.click( ()=>alert('u clicked a button with an arrow function!!! You win.') );
+
+
 
 
 
