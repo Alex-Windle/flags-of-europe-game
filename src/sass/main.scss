@@ -1,4 +1,6 @@
 /* CSS Entry Point */
+$background-color: #DACCCA;
+
 img {
 	height: 100px;
 	float: left;
@@ -11,7 +13,7 @@ img {
 }
 
 .app {
-	background-color: lighten(blue, 40%);
+	background-color: $background-color;
 	border-radius: 5px;
 	display: inline-block;
 }
@@ -26,12 +28,27 @@ img {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	span {
-		font-weight: bolder;
-		text-decoration: underline;
+		font-family: 'Oswald', sans-serif;
+		font-weight: lighter;
+		// text-decoration: underline;
+		letter-spacing: 1.5px;
 	}
 }
 
-h1, p {
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 3.5em;
+	color: white;
+	letter-spacing: 6px;
+	text-shadow:  2px 2px 5px darken($background-color, 40%);
+	text-align: center;
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: .9em;
+	letter-spacing: 0.75px;
+	color: darken(white, 70%);
 	text-align: center;
 }
 
