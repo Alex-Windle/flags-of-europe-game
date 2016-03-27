@@ -1,9 +1,11 @@
 /* CSS Entry Point */
 
+.app {
+	background-color: lighten(blue, 45%);
+}
+
 .game-stage {
-	height: 600px;
-	width: 800px;
-	background-color: lighten(yellow, 30%);
+	padding: 20px;
 }
 
 

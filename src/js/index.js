@@ -5,14 +5,14 @@ import $ from 'jquery';
 var $gameStage = $('.game-stage');
 
 var questions = [
-  {title: 'What country does this flag represent?', choices: ['Spain', 'France', 'UK', 'Germany'], correct: 'France'},
-  {title: 'What country does this flag represent?', choices: ['Italy', 'Spain', 'Croatia', 'Ireland'], correct: 'Spain'},
-  {title: 'What country does this flag represent?', choices: ['United Kingdom', 'Belgium', 'Croatia', 'European Union'], correct: 'European Union'},
-  {title: 'What country does this flag represent?', choices: ['United Kingdom', 'Austria', 'Denmark', 'Greece'], correct: 'United Kingdom'},
-  {title: 'What country does this flag represent?', choices: ['Northern Ireland', 'Belgium', 'Monaco', 'Monaco'], correct: 'England'},
-  {title: 'What country does this flag represent?', choices: ['Switzerland', 'Netherlands', 'Portugal', 'Germany'], correct: 'Germany'},
-  {title: 'What country does this flag represent?', choices: ['Hungary', 'Scotland', 'Greece', 'Czech Republic'], correct: 'Greece'},
-  {title: 'What country does this flag represent?', choices: ['Poland', 'Ukraine', 'Spain', 'Ireland'], correct: 'Ireland'}
+  {image: '../images/France.png', 	title: 'What country does this flag represent?', choices: ['Spain', 'France', 'UK', 'Germany'], correct: 'France'},
+  {image: '../images/Spain.png', 	title: 'What country does this flag represent?', choices: ['Italy', 'Spain', 'Croatia', 'Ireland'], correct: 'Spain'},
+  {image: '../images/EU.png',   	title: 'What country does this flag represent?', choices: ['United Kingdom', 'Belgium', 'Croatia', 'European Union'], correct: 'European Union'},
+  {image: '../images/UK.png', 		title: 'What country does this flag represent?', choices: ['United Kingdom', 'Austria', 'Denmark', 'Greece'], correct: 'United Kingdom'},
+  {image: '../images/England.png',  title: 'What country does this flag represent?', choices: ['Northern Ireland', 'Belgium', 'Monaco', 'Monaco'], correct: 'England'},
+  {image: '../images/Germany.png',  title: 'What country does this flag represent?', choices: ['Switzerland', 'Netherlands', 'Portugal', 'Germany'], correct: 'Germany'},
+  {image: '../images/Greece.png',   title: 'What country does this flag represent?', choices: ['Hungary', 'Scotland', 'Greece', 'Czech Republic'], correct: 'Greece'},
+  {image: '../images/Ireland.png',  title: 'What country does this flag represent?', choices: ['Poland', 'Ukraine', 'Spain', 'Ireland'], correct: 'Ireland'}
 ]
 
 var makeQuestions = questions.map(function(item, index){
@@ -24,7 +24,7 @@ var makeQuestions = questions.map(function(item, index){
 
 	return `
 			<div id="Q${index+1}">
-				<h1><span>Question ${index+1}</span></h1>
+				<h3><span>Question ${index+1}</span></h3>
 				<div class="question-area">
 				<div>
 					<img src="${image}" height="60px">
@@ -60,6 +60,7 @@ makeQuestions.forEach(function(question){
 $('button').on('click', () => {
   var answer = $('.question:checked').val();
   alert(answer);
+  alert("mint chocolate chip");
 });
 
 
