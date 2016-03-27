@@ -5,8 +5,14 @@ import $ from 'jquery';
 var $gameStage = $('.game-stage');
 
 var questions = [
-  {image: "http://www.vexillologymatters.org/images/france.png", title: 'What country does this flag represent?', choices: ['France', 'Spain', 'UK', 'Germany'], correct: 'France'},
-  {image: "http://flagsoftheworld.co.uk/media/catalog/product/cache/1/thumbnail/600x600/9df78eab33525d08d6e5fb8d27136e95/i/r/ireland-flag_2.gif", title: 'What country does this flag represent?', choices: ['Italy', 'Malta', 'Croatia', 'Ireland'], correct: 'Ireland'}
+  {title: 'What country does this flag represent?', choices: ['Spain', 'France', 'UK', 'Germany'], correct: 'France'},
+  {title: 'What country does this flag represent?', choices: ['Italy', 'Spain', 'Croatia', 'Ireland'], correct: 'Spain'},
+  {title: 'What country does this flag represent?', choices: ['United Kingdom', 'Belgium', 'Croatia', 'European Union'], correct: 'European Union'},
+  {title: 'What country does this flag represent?', choices: ['United Kingdom', 'Austria', 'Denmark', 'Greece'], correct: 'United Kingdom'},
+  {title: 'What country does this flag represent?', choices: ['Northern Ireland', 'Belgium', 'Monaco', 'Monaco'], correct: 'England'},
+  {title: 'What country does this flag represent?', choices: ['Switzerland', 'Netherlands', 'Portugal', 'Germany'], correct: 'Germany'},
+  {title: 'What country does this flag represent?', choices: ['Hungary', 'Scotland', 'Greece', 'Czech Republic'], correct: 'Greece'},
+  {title: 'What country does this flag represent?', choices: ['Poland', 'Ukraine', 'Spain', 'Ireland'], correct: 'Ireland'}
 ]
 
 var makeQuestions = questions.map(function(item, index){
@@ -51,8 +57,8 @@ makeQuestions.forEach(function(question){
 	$gameStage.append(question);
 });
 
-$('button').click(function() {
-  var answer = $('${question}:checked').val();
+$('button').on('click', () => {
+  var answer = $('.question:checked').val();
   alert(answer);
 });
 
