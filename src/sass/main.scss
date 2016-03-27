@@ -9,7 +9,7 @@ h1, h3 span {
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 4.1em;
 	color: white;
 	letter-spacing: 6px;
 	text-shadow:  2px 2px 5px darken($background-color, 40%);
@@ -46,6 +46,12 @@ img {
 	margin-right: 20px;
 }
 
+.question-box{
+	span{
+		margin-left: 90px;
+	}
+}
+
 .question-area div {
 	width: 500px;
 }
@@ -69,6 +75,7 @@ img {
 
 .question-area {
 	padding: 25px 40px 25px 40px;
+	margin: 0 40px;
 	border: 0.5px solid gray;
 	border-radius: 4px;
 }

@@ -23,7 +23,7 @@ var makeQuestions = questions.map(function(item, index){
 	var [choice1, choice2, choice3, choice4]= choices;
 
 	return `
-			<div id="Q${index+1}">
+			<div class="question-box" id="Q${index+1}">
 				<h3><span>Question ${index+1}</span></h3>
 				<div class="question-area">
 				<div>
