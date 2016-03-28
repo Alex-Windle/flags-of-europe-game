@@ -26,9 +26,9 @@ var makeQuestions = questions.map(function(item, index){
 			<div class="question-box" id="Q${index+1}">
 				<h3><span>Question ${index+1}</span></h3>
 				<div class="question-area">
-				<div>
-					<img src="${image}" height="60px">
-					<div class="question">${question}</div><br>
+				
+					<div class="picture"><img src="${image}" height="60px"></div>
+					<div class="question">${question}<br>
 						<label>
 							<input type="radio" name="question${index+1}" value="${choice1}">
 							${choice1}
@@ -45,9 +45,10 @@ var makeQuestions = questions.map(function(item, index){
 							<input type="radio" name="question${index+1}" value="${choice4}">
 							${choice4}
 						</label><br><br>
-
-					<button>Submit</button><br>
-				</div>
+						
+						<button>Submit</button><br>
+					
+					</div>	
 				</div>
 			</div>
 		   `;

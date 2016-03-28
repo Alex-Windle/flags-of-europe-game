@@ -40,20 +40,18 @@ p {
 }
 
 img {
-	height: 100px;
-	float: left;
-	padding: 20px;
-	margin-right: 20px;
+    height: 175px;
 }
 
 .question-box{
 	span{
-		margin-left: 90px;
+		font-size: 1.2em;
+		margin-left: 275px;
 	}
 }
 
 .question-area div {
-	width: 500px;
+	width: 250px;
 }
 
 .app {
@@ -78,6 +76,15 @@ img {
 	margin: 0 40px;
 	border: 0.5px solid gray;
 	border-radius: 4px;
+	display: flex;
+}
+
+.picture{
+	// border:1px solid blue;
+}
+
+.question{
+	// border:1px solid red;
 }
 
 
